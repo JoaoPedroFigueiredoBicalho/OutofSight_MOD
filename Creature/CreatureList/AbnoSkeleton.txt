@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<creature_list>
+<creature src="AbnoSkeleton" >	   <!-- Should be the Name -->
+    <stat>AbnoSkeleton_stat</stat> <!-- Should be [Name]_stat  -->
+  </creature>
+</creature_list>

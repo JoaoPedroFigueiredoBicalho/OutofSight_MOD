@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<equipment_list> <!-- For a more detailed explanation of stuff happening here, see the documentation -->
+
+  <equipment id="460730" type="special"> <!-- "special" for gifts, these usually start with 4 -->
+    <name>AbnoSkeleton_Name</name>       <!-- The EGO name, has a referenced tag in the xml file -->
+    <desc>AbnoSkeleton_Gift</desc>	 <!-- The EGO description, has a referenced tag in the xml file -->
+    <script>AbnoSkeletonGift</script>    <!-- The EGO code, references a class in the .dll, shouldn't be changed until you've made your .dll -->
+    <attachPos>ribborn</attachPos> 	 <!-- Part of which slot the gift goes onto -->
+    <attachType>add</attachType>	 <!-- Part of which slot the gift goes onto -->
+
+    <!-- Gift stat bonuses -->
+    <bonus>
+      <hp>1</hp>
+      <mental>1</mental>
+      <cubeSpeed>1</cubeSpeed>
+      <workProb>1</workProb>
+      <movement>1</movement>
+      <attackSpeed>1</attackSpeed>
+    </bonus>
+
+    <!-- Sprite should match the file name of the image in the Sprite/Attatchment Folder -->
+    <sprite>460730</sprite>
+
+  </equipment>
+
+  <equipment id="360730" type="armor"> <!-- EGO suit -->
+    <name>AbnoSkeleton_Name</name>	 		<!-- The EGO name, has a referenced tag in the xml file -->
+    <desc>AbnoSkeleton_Armor_Desc</desc> 		<!-- The EGO description, has a referenced tag in the xml file -->
+    <specialDesc>AbnoSkeleton_Armor_Eff</specialDesc>	<!-- The EGO's ability, has a referenced tag in the xml file -->
+    <script>AbnoSkeletonArmor</script>			<!-- The EGO code, references a class in the .dll, shouldn't be changed until you've made your .dll -->
+    <armorId>360730</armorId>				<!-- The suits' internal ID, should match the equipment ID and the name of the Sprite in Sprte/Armor -->
+    <defense>						<!-- The suits' defenses -->
+      <defenseElement type="R">1</defenseElement>
+      <defenseElement type="W">1</defenseElement>
+      <defenseElement type="B">1</defenseElement>
+      <defenseElement type="P">1</defenseElement>
+    </defense>
+    <grade>2</grade>					<!-- The risk level of the EGO -->
+    <maxNum>3</maxNum>					<!-- Max produceable amount -->
+  </equipment>
+
+  <equipment id="260730" type="weapon"> <!-- Ego weapon-->
+    <name>AbnoSkeleton_Name</name>			<!-- The EGO name, has a referenced tag in the xml file -->
+    <desc>AbnoSkeleton_Wep_Desc</desc>			<!-- The EGO description, has a referenced tag in the xml file -->
+    <specialDesc>AbnoSkeleton_Wep_Eff</specialDesc>	<!-- The EGO's ability, has a referenced tag in the xml file -->
+    <script>AbnoSkeletonWeapon</script>			<!-- The EGO code, references a class in the .dll, shouldn't be changed until you've made your .dll -->
+    <weaponClassType>spear</weaponClassType> 		<!-- The weapon type, can be “mace”, “rifle”, “spear”, “hammer”, “cannon”, “bowgun”, “axe”, “fist”, “knife”, “pistol”, “special” -->
+    <animation>Attack1</animation>			<!-- The animation the weapon uses, most of the time leave as Attack1 -->
+    <damage type="W" min="1" max="15">			<!-- The weapon damage -->
+	<soundInfo type="damage">Weapons/spear1</soundInfo>	<!-- Sound the weapon makes when hitting -->
+    </damage>
+    <range>4</range>					<!-- Weapon range -->
+    <attackSpeed>2</attackSpeed> 			<!-- Weapon attack interval (higher = slower) -->
+    <grade>2</grade>					<!-- The risk level of the EGO -->
+    <maxNum>3</maxNum>					<!-- Max produceable amount -->
+
+    <!-- Sprite should match the file name of the image in the Sprite/Weapon Folder -->
+    <sprite>260730</sprite>
+  </equipment>
+
+</equipment_list>

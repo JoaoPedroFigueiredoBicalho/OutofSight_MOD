@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<creature> <!-- For a more detailed explanation of stuff happening here, see the documentation -->
+  <info id ="102152"> <!-- Put your Abno ID here -->
+
+<!-- This file holds all text related to your Abno, like its story, name and managerial guidelines. -->
+
+    <narration action="move"> <!-- The narration tag contains texts that will be shown in relation to work with your abno -->
+      #0 is sent into $0's containment chamber. This text is shown when you assign work.
+    </narration>
+
+    <narration action="start"> <!-- These tags can be removed, if you don't have any text to be shown, but I'd recommend just leaving them empty instead. -->
+      [
+	  {This is shown when the work starts. Above the containment unit.}  
+      {#0 is a placeholder for the employee working on the abno.},
+	  {$0 is the placeholder for the abno name.},
+	  {#0 should adjust these phrases.},
+      ]
+    </narration>
+
+    <narration action="mid1">
+      [
+      {mid1 - mid4 are shown during the work}, 
+	  {If you have multiple of these in one narration tag, a random one will be chosen every work.}, 
+      ]
+    </narration>
+    <narration action="mid2">
+      [
+      {mid1 is shown near the start},
+      {mid4 is shown near the end},
+      ]
+    </narration>
+    <narration action="mid3">
+      [
+      {More about these can be found in the documentation}, 
+      {Example text. 2},
+      {Example text. 3},
+	  <!-- {Example text. 4}, -->     <!-- You can freely add or remove entries, just put them in curly brackets and put a comma afterwards -->
+      ]
+    </narration>
+    <narration action="mid4">
+      [
+      {Example text. 1}, 
+      {Example text. 2},
+      {Example text. 3},
+      ]
+    </narration>
+
+  </info>
+
+  <observe level ="1"> <!-- Do not change the value of level -->
+    <collection>
+	
+	<!-- "openLevel" refers to the observation level of the abno, can be used to adjust the info of the abno with higher levels, like Leatitia's name changing with the observation level-->
+	
+      <codeNo openLevel ="0">F-02-152</codeNo> <!-- the abno codex code -->
+	  
+      <portrait openLevel ="1">Custom/AbnoSkeleton</portrait> <!-- the abno portrait, should be the filename of the image in the Portrait folder -->
+
+      <name openLevel ="1"> 
+        Out of Sight Out of Mind        <!-- name of the abno as displayed in game -->
+      </name>
+	  
+	  <!--
+	  <name openLevel ="3"> 		If you wanted the name of the Abno to change at obervation level 3, this is how you'd do it.
+        Better name        			
+      </name>             
+	  
+	  -->
+
+      <riskLevel openLevel ="1">
+        ZAYIN 				<!-- risk level of the abno, should be ZAYIN, TETH, HE, WAW or ALEPH -->
+      </riskLevel>
+
+      <specialName openLevel ="1">
+      The Abno Name	        <!-- This value is never actually used, unless you make manual use of it -->
+      </specialName>
+	  
+      <openText>"I have something I want to tell you."</openText>
+
+    </collection>
+
+<desc id="1" openLevel="0">   <!-- The id here has no real use, try not to have duplicates or skip one. openLevel still refers to the observation level, so the story of id = 3 is unlocked at observation level 2 -->
+      [
+      {
+	  Got a secret
+
+Can you keep
+it
+
+Yes Catherine
+
+I Promise
+
+I swear on my life
+	  }
+      ]
+    </desc>
+	
+	  <desc id="2" openLevel="1">
+      [
+      {
+	  These are unlocked with the observation level of the abno.
+	  }
+      ]
+    </desc>
+
+    <desc id="3" openLevel="2">
+      [
+      {
+	  supports formatting, all text here actually supports formatting
+	  }
+      ]
+    </desc>
+    <desc id="4" openLevel="3">
+      [
+      {
+		You can also skip an openLevel like only having 0, 1 and then 4. This mean on observation levels 2 and 3 no new story will be added. 
+	  }
+      ]
+    </desc>
+	    <desc id="5" openLevel="4">
+      [
+      {
+		very true
+	  }
+      ]
+    </desc>
+	
+
+
+    <specialTipSize size="6"> <!-- Should be the amount of managerial guidelines the abno has -->
+      <specialTip openLevel="0" key="yes1">Successful work completion will cause F-02-152 to tell the employee about another employee's private secret, while blessing the employee holding the secret under a phenomenon dubbed as "Mindful".</specialTip>     <!-- OpenLevel here has no real effect, leave it as is -->
+      <specialTip openLevel="1" key="yee2">[name], who was under the "Mindful" effect, reported about feeling little to no pain from BLACK damage attacks.</specialTip>		<!-- each managerial guideline needs a unique key -->
+      <specialTip openLevel="1" key="yep3">If there's already a "Mindful" employee and yet another employee is sent to F-02-152's containment unit to work and successfully completes it, the abnormality will also tell them about the same secret, while cursing the employee holding the same secret under a phenomenon dubbed as "Sightful".</specialTip>		<!-- The guidelines appear in the same order in game as they are here. -->
+      <specialTip openLevel="1" key="yea4">[name], who was under the "Sightful" effect, reported feeling little to no pain from PALE damage attacks.</specialTip>
+      <specialTip openLevel="1" key="yea5">Both the "Mindful" and "Sightful" employees timely and suddenly would chase after eachother with the intent to kill. Their actions can be stopped with interference from the Manager, coming back to their senses.</specialTip>
+      <specialTip openLevel="1" key="yea6">If a third different employee is sent to work at F-02-152's containment unit, any and all employees with the "Mindful" or "Sightful" phenomenon died, including the employee that just concluded work with the abnormality.</specialTip>
+
+	  <!--    <specialTip openLevel="1" key="no5">openlevel is still not relevant</specialTip>   you can add more or delete some  this should match the amount of care_x tags in the Creature Stats file and the specialTipSize size attribute -->
+    </specialTipSize>
+  </observe>
+</creature>

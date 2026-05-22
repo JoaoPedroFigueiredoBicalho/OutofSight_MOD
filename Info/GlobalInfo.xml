@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info>
+<ID>Arwyn_OutofSightOutofMind</ID>  <!--  The ModID of your Mod, it should be unique among all possible mods out there, so i recommend including your abno name, and your author name. -->
+</info>
+
+<!--  If you want to add your abno or its gear via console, you must include the Mod ID -->

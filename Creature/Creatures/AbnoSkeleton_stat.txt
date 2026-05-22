@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<creature> <!-- For a more detailed explanation of stuff happening here, see the documentation -->
+
+<!-- The hard values of the abno go into here, like the mood ranges, work probabilities etc. -->
+
+  <script>AbnoSkeleton</script>  <!-- Should be the Name from values, BUT adjust this only later  -->
+				 <!-- This references the name of a class loaded by the .dll, only adjust this after you made your own .dll  -->
+
+  <stat>
+    <riskLevel>1</riskLevel>       <!-- The Abno risk level from 1 to 5 (Zayin to Aleph)  -->
+    <maxWorkCount>3</maxWorkCount> <!-- If this is 0, you abno will never get any meltdowns, normally it is any number bigger than 0 -->
+    <workType>normal</workType>    <!-- The type of the abno "normal" or "kit" for tools  -->
+    <!-- <kitType></kitType>  -->  <!-- The type of tool abno “equip” (equipable), “channel” (chaneled use) or “oneshot”  -->
+
+<!--  Chances for a work to produce a PE box for the 4 work types  -->   
+<!--  0.5 = 50% = a "normal" chance  -->  
+    <workProb type="R">  <!--  Instinct work  -->
+      <prob level="1">0.2</prob> <!--  Instinct Level 1  -->
+      <prob level="2">0.2</prob> <!--  Instinct Level 2  -->
+      <prob level="3">0.5</prob> <!--  Instinct Level 3  -->
+      <prob level="4">0.5</prob> <!--  Instinct Level 4  -->
+      <prob level="5">0.5</prob> <!--  Instinct Level 5  -->
+    </workProb>
+    <workProb type="W">  <!--  Insight work  -->
+      <prob level="1">0.0</prob>
+      <prob level="2">0.5</prob>
+      <prob level="3">0.5</prob>
+      <prob level="4">0.5</prob>
+      <prob level="5">0.5</prob>
+    </workProb>
+    <workProb type="B">  <!--  Attatchment work  -->
+      <prob level="1">0.8</prob>
+      <prob level="2">0.8</prob>
+      <prob level="3">0.8</prob>
+      <prob level="4">0.8</prob>
+      <prob level="5">0.8</prob>
+    </workProb>
+    <workProb type="P">  <!--  Repression work  -->
+      <prob level="1">0.65</prob>
+      <prob level="2">0.65</prob>
+      <prob level="3">0.65</prob>
+      <prob level="4">0.65</prob>
+      <prob level="5">0.65</prob>
+    </workProb>
+
+    <workCooltime>10</workCooltime> <!--  Amount of time abno cannot be worked with after finishing a work.  -->
+
+    <!--  The abno mood range  -->  
+    <feelingStateCubeBounds>
+	<!-- below this is the bad range -->
+      <cube>1</cube>
+	<!-- In between these values is the neutral abno mood range -->
+      <cube>3</cube>
+	<!-- In between these values is the happy abno mood range -->
+      <cube>10</cube> <!-- Max obtainable PE boxes -->
+    </feelingStateCubeBounds>
+
+    <workDamage type="W" min="1" max="2" /> <!--  Work Damage type can be "R" "W" "B" "P"  -->  
+
+    <workSpeed>0.25</workSpeed> <!--  Work speed multiplier, average range is 0.2 - 0.3333  -->  
+
+
+    <observeInfo total="10"> <!-- cost of all info from the abno added together -->
+      <observeElement name="stat" cost="1" />		<!--  Basic info  -->
+      <observeElement name="defense" cost="1" />	<!--  Escape info  -->
+      <observeElement name="work_r" cost="1" />		<!--  Instinct Work info  -->
+      <observeElement name="work_w" cost="1" />		<!--  Insight Work info  -->
+      <observeElement name="work_b" cost="1" />		<!--  Attatchment Work info  -->
+      <observeElement name="work_p" cost="1" />		<!--  Repression Work info  -->
+      <observeElement name="care_0" cost="1" />		<!--  Manangerial guidelines  -->
+      <observeElement name="care_1" cost="1" />		<!--  the amount of care_x should be the same as Guidelines in the CreatureInfo folder -->
+      <observeElement name="care_2" cost="1" />	
+      <observeElement name="care_3" cost="1" />
+      <observeElement name="care_4" cost="1" />
+      <observeElement name="care_5" cost="1" />
+      <!--   <observeElement name="care_4" cost="1" />  you can add more, if you have more guidelines in the CreatureInfo file -->
+    </observeInfo>
+
+	<!-- the bonuses you get from the abno's observation level -->
+    <observeBonus level="1" type="prob">1</observeBonus>  	<!-- can be either "prob" or "speed" -->
+    <observeBonus level="2" type="prob">1</observeBonus>	<!-- 1 and prob would be > Work chance increased by 1% -->
+    <observeBonus level="3" type="prob">1</observeBonus>
+    <observeBonus level="4" type="prob">1</observeBonus>
+
+    <equipment level="3" cost="10" equipId="260730" /> <!-- EGO that belongs to this abno, the IDs here should match the IDs from the equipment txt -->
+    <equipment level="4" cost="10" equipId="360730" /> <!-- cost is in PE boxes for weapons and suits -->
+    <equipment level="4" prob="0.01" equipId="460730" /> <!-- prob is the EGO gift equisition rate 0.01 = 1% -->
+    <!-- level referes to the observation level you need to obtain the EGO -->
+
+    <escapeable>false</escapeable> <!-- Can your abno breach? Should be "true" or "false". Will decide if the Escape info shows "None escaping entity" or the defense info -->
+    
+    <!-- The default resistances used by the abno when breaching, and shown in the abno info, can be deleted for not breaching abnos -->
+    <defense id="1">
+      <defenseElement type="R">0.0</defenseElement>
+      <defenseElement type="W">0.7</defenseElement>
+      <defenseElement type="B">0.9</defenseElement>
+      <defenseElement type="P">1.5</defenseElement>
+    </defense>
+
+    <!-- The default movement speed used by the abno when breaching, f.e. CENCORED is 1.5, can be deleted for not breaching abnos -->
+    <speed>1</speed>
+
+    <!-- The default starting HP used by the abno when breaching, can be deleted for not breaching abnos-->
+    <hp>100</hp>
+
+    <!-- The max qliphoth counter of the abno -->
+    <qliphoth>5</qliphoth>
+
+  </stat>
+  <graph>
+    <node id="creature" x="0.04" y="-0.03" type="creature" />     <!-- The position of the abno in the containment room -->
+    <node id="workspace" x="1.9" y="-1.8" type="workspace" />     <!-- Positions of other things in the room, such as the position the employee takes when working -->
+    <!--<node id="door"  x="2" y="-1" type="entry"/>-->		  <!-- Mostly, do not change these -->
+    <node id="outter" x="0" y="0" type="outterDoor" />            
+    <node id="inner" x="2" y="-1.8" type="innerDoor" />
+    <node id="teddy" x="-0.2" y="-1.8" type="custom" />
+    <!--<edge node1="workspace" node2="door" type="road" />--> 
+    <edge node1="teddy" node2="inner" type="road" />
+    <edge node1="workspace" node2="inner" type="road" />
+    <edge node1="creature" node2="workspace" type="road" />
+  </graph>
+  <anim prefab="Custom/AbnoSkeletonAnim" x="-1" y="-2" /> <!-- Same as the foldername in the Zivono_AbnoSkeleton_MOD\CreatureAnimation folder -->
+  <portrait src="Unit/creature/magicalGirl" /> <!-- Leave this, it is set in the CreatureInfo folder -->
+</creature>

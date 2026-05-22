@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<localize> <!-- these tags are defined in the txt file -->
+<text id="AbnoSkeleton_Name">Ego Name</text> 
+<!--  <text id="AbnoSkeleton_Weapon_Name">Ego weapon name</text>  You can give each piece of EGO its own name, by making multiple tags here, and referencing in the txt file -->
+<text id="AbnoSkeleton_Gift">Gift text</text>
+<text id="AbnoSkeleton_Armor_Eff">Effects of the suit.</text>
+<text id="AbnoSkeleton_Armor_Desc">Lore of the suit.</text>
+<text id="AbnoSkeleton_Wep_Eff">Effects of the weapon.</text>
+<text id="AbnoSkeleton_Wep_Desc">Lore of the weapon.</text>
+</localize>

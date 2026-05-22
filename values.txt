@@ -1,0 +1,18 @@
+Keep your Abno's ID and Name here while you adjust all the files. After you changed all the values to your own, and the Abno can be summoned in game, you can delete this file.
+
+ID: 102152 
+
+Name: AbnoSkeleton
+
+For ID pick any number you want, though it shouldn't be excessively large. Take base game and other modded abno IDs as reference.
+
+NOTE: IDs between 200001-299999 and IDs above 400000 will make your Abnormality be hidden from the Codex. (This can be fixed with a harmony patch (advanced) or by using f.e. https://www.nexusmods.com/lobotomycorporation/mods/520)
+
+I recommend not using IDs similar to other mods, to avoid conflicts. I usually start my Abnos with 160 and then take 3 digits to specify the abno. 
+
+You should decide on a different set of starting numbers (use 1 as the first digit). If you want to be really sure to avoid conflicts, you can add a 7th digit although this will hide your abno from the codex by default, 
+this will almost guarantee nobody else gets close to your IDs and the codex can be fixed through above methods. (You can include a codex revealing mod as a requirement on your mod.) 
+
+The name of your abno can be any string of characters. It shouldn't be the same as any other mod's.
+
+Don't forget to also change the Mod ID in GlobalInfo to be unique and related to your mod!

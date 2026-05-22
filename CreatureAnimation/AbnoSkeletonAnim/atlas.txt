@@ -1,0 +1,146 @@
+
+skeleton.png
+size: 1472,743
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Bot
+  rotate: false
+  xy: 1388, 605
+  size: 81, 16
+  orig: 81, 16
+  offset: 0, 0
+  index: -1
+Left
+  rotate: false
+  xy: 1345, 445
+  size: 125, 145
+  orig: 125, 145
+  offset: 0, 0
+  index: -1
+Low
+  rotate: true
+  xy: 1380, 67
+  size: 229, 45
+  orig: 229, 45
+  offset: 0, 0
+  index: -1
+Low alt 1
+  rotate: false
+  xy: 1213, 4
+  size: 226, 55
+  orig: 226, 55
+  offset: 0, 0
+  index: -1
+Low alt 2
+  rotate: true
+  xy: 1275, 82
+  size: 212, 50
+  orig: 212, 50
+  offset: 0, 0
+  index: -1
+Low alt 3
+  rotate: true
+  xy: 1213, 61
+  size: 233, 60
+  orig: 233, 60
+  offset: 0, 0
+  index: -1
+Right
+  rotate: false
+  xy: 1213, 296
+  size: 127, 142
+  orig: 127, 142
+  offset: 0, 0
+  index: -1
+TL
+  rotate: true
+  xy: 1350, 609
+  size: 132, 36
+  orig: 132, 36
+  offset: 0, 0
+  index: -1
+TR
+  rotate: true
+  xy: 1388, 623
+  size: 118, 35
+  orig: 118, 35
+  offset: 0, 0
+  index: -1
+blood L
+  rotate: false
+  xy: 1213, 440
+  size: 130, 150
+  orig: 130, 150
+  offset: 0, 0
+  index: -1
+blood R
+  rotate: false
+  xy: 1213, 592
+  size: 135, 149
+  orig: 135, 149
+  offset: 0, 0
+  index: -1
+blood TL
+  rotate: true
+  xy: 1375, 298
+  size: 145, 52
+  orig: 145, 52
+  offset: 0, 0
+  index: -1
+blood TR
+  rotate: true
+  xy: 1342, 297
+  size: 141, 31
+  orig: 141, 31
+  offset: 0, 0
+  index: -1
+blood bot
+  rotate: true
+  xy: 1429, 372
+  size: 71, 23
+  orig: 71, 23
+  offset: 0, 0
+  index: -1
+blood low
+  rotate: true
+  xy: 1327, 61
+  size: 233, 51
+  orig: 233, 51
+  offset: 0, 0
+  index: -1
+dkinroom
+  rotate: false
+  xy: 2, 2
+  size: 1209, 739
+  orig: 1209, 739
+  offset: 0, 0
+  index: -1
+eye L
+  rotate: false
+  xy: 1427, 237
+  size: 42, 59
+  orig: 42, 59
+  offset: 0, 0
+  index: -1
+eye R
+  rotate: false
+  xy: 1425, 679
+  size: 42, 62
+  orig: 42, 62
+  offset: 0, 0
+  index: -1
+ris L
+  rotate: true
+  xy: 1275, 61
+  size: 19, 25
+  orig: 19, 25
+  offset: 0, 0
+  index: -1
+ris R
+  rotate: false
+  xy: 1425, 654
+  size: 20, 23
+  orig: 20, 23
+  offset: 0, 0
+  index: -1
